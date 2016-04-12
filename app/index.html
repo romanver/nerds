@@ -3,19 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>NERD'S</title>
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="css/jcarousel.css" type="text/css">
+	<link rel="stylesheet" href="img/font/font.css" type="text/css">
+	<link rel="stylesheet" href="bower/normalize-css/normalize.css" type="text/css">
+	<script type="text/javascript" src="bower/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jcarousel/jquery.jcarousel.min.js"></script>
+	<script type="text/javascript" src="js/jcarousel/jquery.jcarousel-control.min.js"></script>
+	<script type="text/javascript" src="js/jcarousel/jquery.jcarousel-pagination.min.js"></script>
+	<script type="text/javascript" src="js/jcarousel/jquery.jcarousel-autoscroll.min.js"></script>
 </head>
 <body>
-	<div class="wrapper">
+	<div class="wrapper wrapper-gray">
 		<div class="container">
 <!-- хэдер начало -->
-			<div class="header">
-				<img src="#" alt="Дизайн-студия NERD'S" class="header-logo">
-				<div class="header-basket">Корзина</div>
+			<div class="header clearfix">
+				<img src="img/logo-Nerds.png" alt="Дизайн-студия NERD'S" class="header-logo">
+				<div class="header-basket"><a href="" class="header-basket-link">Корзина</a></div>
 				<ul class="header-menu">
-					<li class="header-menu-item">Студия</li>
-					<li class="header-menu-item">Клиенты</li>
-					<li class="header-menu-item">Магазин</li>
-					<li class="header-menu-item">Контакты</li>
+					<li class="header-menu-item"><a href="#" class="header-menu-item-link">Студия</a></li>
+					<li class="header-menu-item"><a href="#" class="header-menu-item-link">Клиенты</a></li>
+					<li class="header-menu-item"><a href="#" class="header-menu-item-link">Магазин</a></li>
+					<li class="header-menu-item"><a href="#" class="header-menu-item-link">Контакты</a></li>
 				</ul>
 			</div>
 		</div>
@@ -23,121 +32,184 @@
 		<div class="container">
 <!-- слайдер начало-->
 			<div class="slider">
-				<div class="slider-box-indicator">
-					<div class="slider-box-indicator-checked"></div>
-					<div class="slider-box-indicator-notchecked"></div>
-					<div class="slider-box-indicator-notchecked"></div>
+				<div class="jcarousel">
+					<ul class="jcarousel-list clearfix">
+						<li class="jcarousel-item">
+							<div class="slider-box clearfix">
+								<div class="slider-box-left">
+									<div class="slider-box-left-title">Долго, дорого, скурпулезно.</div>
+									<div class="slider-box-left-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</div>
+									<div class="slider-box-left-btn"><a href="#" class="slider-box-left-btn-link">Узнать больше</a></div>
+								</div>
+								<div class="slider-box-img"></div>
+							</div>
+						</li>
+						<li class="jcarousel-item">
+							<div class="slider-box1 clearfix">
+								<div class="slider-box-left">
+									<div class="slider-box-left-title slider-box1-left-title">Любите ли вы математику, как любим ее мы?</div>
+									<div class="slider-box-left-description slider-box1-left-description">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</div>
+									<div class="slider-box-left-btn"><a href="#" class="slider-box-left-btn-link">Узнать больше</a></div>
+								</div>
+								<div class="slider-box1-img"></div>
+							</div>
+						</li>
+						<li class="jcarousel-item">
+							<div class="slider-box2 clearfix">
+								<div class="slider-box-left">
+									<div class="slider-box-left-title slider-box2-left-title">Только наркотики, только хардкор!</div>
+									<div class="slider-box-left-description slider-box2-left-description">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</div>
+									<div class="slider-box-left-btn"><a href="#" class="slider-box-left-btn-link">Узнать больше</a></div>
+								</div>
+								<div class="slider-box2-img"></div>
+							</div>
+						</li>
+					</ul>
 				</div>
-				<div class="slider-box">
-					<div class="slider-box-title">Долго, дорого, скурпулезно.</div>
-					<div class="slider-box-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</div>
-					<div class="slider-box-btn">Узнать больше</div>
-					<div class="slider-box-img"></div>
-				</div>
-				<div class="slider-box">
-					<div class="slider-box-title">Любите ли вы математику, как любим ее мы?</div>
-					<div class="slider-box-description">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</div>
-					<div class="slider-box-btn">Узнать больше</div>
-					<div class="slider-box-img"></div>
-				</div>
-				<div class="slider-box">
-					<div class="slider-box-title">Только наркотики, только хардкор!</div>
-					<div class="slider-box-description">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</div>
-					<div class="slider-box-btn">Узнать больше</div>
-					<div class="slider-box-img"></div>
-				</div>
+				<div class="jcarousel-pagination"></div>
+						<!--div class="slider-box-indicator">
+							<div class="slider-box-indicator-checked"><a href="#" class="slider-box-indicator-checked-link"></a></div>
+							<div class="slider-box-indicator-notchecked"><a href="#" class="slider-box-indicator-notchecked-link"></a></div>
+							<div class="slider-box-indicator-notchecked"><a href="#" class="slider-box-indicator-notchecked-link"></a></div>
+						</div-->
 			</div>
 <!-- слайдер конец -->
 		</div>
 	</div>
-	<div class="wrapper">
+	<div class="wrapper wrapper-white">
 		<div class="container">
 <!-- заказы начало -->
-			<div class="order">
+			<div class="order clearfix">
 				<div class="order-box">
-					<div class="order-box-img"></div>
+					<div class="order-box-websitesimg"></div>
 					<div class="order-box-title">Веб-сайты</div>
 					<div class="order-box-description">Мир никогда не будет прежним после того как увидит ваш сайт!</div>
-					<div class="order-box-btn">Заказать</div>
+					<div class="order-box-btn"><a href="#" class="order-box-btn-link">Заказать</a></div>
 				</div>
 				<div class="order-box">
-					<div class="order-box-img"></div>
+					<div class="order-box-appsimg"></div>
 					<div class="order-box-title">Приложения</div>
-					<div class="order-box-description">Покорите топ-10 приложений в AppStore и Google Play</div>
-					<div class="order-box-btn">Заказать</div>
+					<div class="order-box-description order-box-description-app">Покорите топ-10 приложений в AppStore и Google Play</div>
+					<div class="order-box-btn order-box-btn-app"><a href="#" class="order-box-btn-link">Заказать</a></div>
 				</div>
 				<div class="order-box">
-					<div class="order-box-img"></div>
+					<div class="order-box-presentimg"></div>
 					<div class="order-box-title">Презентации</div>
 					<div class="order-box-description">Вы даже не подозреваете, насколько вы изумительны!</div>
-					<div class="order-box-btn">Заказать</div>
+					<div class="order-box-btn order-box-btn-present"><a href="#" class="order-box-btn-link">Заказать</a></div>
 				</div>
 			</div>
 <!-- заказы конец -->
+			
 <!-- о нас начало -->
-			<div class="about">
-				<div class="about-title">Мы - маленькая,но гордая дизайн-студия из Краснодара.</div>
-				<div class="about-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</div>
-				<div class="about-work-title">Выполняем заказы на разработку:</div>
-				<ul class="about-work">
-					<li class="about-work-item">Веб-сайтов любой сложности</li>
-					<li class="about-work-item">Мобильных приложений для iOS и Android</li>
-					<li class="about-work-item">Слайдшоу и видео для корпоративных презентаций</li>
-				</ul>
-				<div class="about-logo"></div>
-				<hr class="about-separator">
-				<div class="about-clients">
-					<div class="about-clients-item about-clients-item-glukhanko"></div>
-					<div class="about-clients-item about-clients-item-htmlacademy"></div>
-					<div class="about-clients-item about-clients-item-bardershop"></div>
+			<div class="about clearfix">
+				<div class="about-body clearfix">
+					<div class="about-left">
+						<div class="about-title">Мы &#8212 маленькая, но гордая дизайн-студия из Краснодара.</div>
+						<div class="about-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</div>
+						<div class="about-work-title">Выполняем заказы на разработку:</div>
+						<ul class="about-work-list">
+							<li class="about-work-item">Веб-сайтов любой сложности</li>
+							<li class="about-work-item">Мобильных приложений для iOS и Android</li>
+							<li class="about-work-item">Слайдшоу и видео для корпоративных презентаций</li>
+						</ul>
+					</div>
+					<div class="about-logo"></div>
+				</div>
+				<div class="about-clients clearfix">
+					<div class="about-clients-item">
+						<a href="#" class="about-clients-item-link-glu"></a>
+					</div>
+					<div class="about-clients-item">
+						<a href="#" class="about-clients-item-link-html"></a>
+					</div>
+					<div class="about-clients-item">
+						<a href="#" class="about-clients-item-link-barb"></a>
+					</div>
 				</div>
 			</div>
 <!-- о нас конец -->
 <!-- каталог начало -->
-			<div class="catalog">
+			<div class="catalog clearfix">
 				<div class="catalog-leftcol">
 					<div class="catalog-leftcol-slider">
 						<div class="catalog-leftcol-slider-title">Стоимость:</div>
 						<div class="catalog-leftcol-slider-item"></div>
-						<label class="catalog-leftcol-slider-startitem">
-							<div class="catalog-leftcol-slider-title">От</div>
+						<div class="catalog-leftcol-slider-startitem">
+							<div class="catalog-leftcol-slider-startitem-title">От</div>
 							<input type="text" placeholder="0" class="catalog-leftcol-slider-startfield">
-						</label>
-						<label class="catalog-leftcol-slider-finishitem">
-							<div class="catalog-leftcol-slider-title">До</div>
-							<input type="text" placeholder="1500" class="catalog-leftcol-slider-finishfield">
-						</label>
+						</div>
+						<div class="catalog-leftcol-slider-finishitem">
+							<div class="catalog-leftcol-slider-finishitem-title">До</div>
+							<input type="text" placeholder="15000" class="catalog-leftcol-slider-finishfield">
+						</div>
 					</div>
 					<div class="catalog-leftcol-grid">
 						<div class="catalog-leftcol-grid-title">Сетка:</div>
 						<ul class="catalog-leftcol-grid-list">
-							<li class="catalog-leftcol-grid-item">Адаптивная</li>
-							<li class="catalog-leftcol-grid-item">Фиксированная</li>
-							<li class="catalog-leftcol-grid-item">Резиновая</li>
+							<li class="catalog-leftcol-grid-item">
+								<a href="#" class="catalog-leftcol-grid-item-link-checked"></a>
+								<a href="#" class="catalog-leftcol-grid-item-link">Адаптивная</a>
+							</li>
+							<li class="catalog-leftcol-grid-item">
+								<a href="#" class="catalog-leftcol-grid-item-link-unchecked"></a>
+								<a href="#" class="catalog-leftcol-grid-item-link">Фиксированная</a>
+							</li>
+							<li class="catalog-leftcol-grid-item">
+								<a href="#" class="catalog-leftcol-grid-item-link-unchecked"></a>
+								<a href="#" class="catalog-leftcol-grid-item-link">Резиновая</a>
+							</li>
 						</ul>
 					</div>
 					<div class="catalog-leftcol-feature">
-						<div class="catalog-leftcol-feature-title">Особенности:ы</div>
+						<div class="catalog-leftcol-feature-title">Особенности:</div>
 						<ul class="catalog-leftcol-feature-list">
-							<li class="catalog-leftcol-feature-item">Слайдер</li>
-							<li class="catalog-leftcol-feature-item">Блок преимуществ</li>
-							<li class="catalog-leftcol-feature-item">Новости</li>
-							<li class="catalog-leftcol-feature-item">Галерея</li>
-							<li class="catalog-leftcol-feature-item">Корзина</li>
+							<li class="catalog-leftcol-feature-item">
+								<a href="#" class="catalog-leftcol-feature-item-link-checked"></a>
+								<a href="#" class="catalog-leftcol-feature-item-link">Слайдер</a>
+							</li>
+							<li class="catalog-leftcol-feature-item">
+								<a href="#" class="catalog-leftcol-feature-item-link-unchecked"></a>
+								<a href="#" class="catalog-leftcol-feature-item-link">Блок преимуществ</a>
+							</li>
+							<li class="catalog-leftcol-feature-item">
+								<a href="#" class="catalog-leftcol-feature-item-link-unchecked"></a>
+								<a href="#" class="catalog-leftcol-feature-item-link">Новости</a>
+							</li>
+							<li class="catalog-leftcol-feature-item">
+								<a href="#" class="catalog-leftcol-feature-item-link-unchecked"></a>
+								<a href="#" class="catalog-leftcol-feature-item-link">Галерея</a>
+							</li>
+							<li class="catalog-leftcol-feature-item">
+								<a href="#" class="catalog-leftcol-feature-item-link-unchecked"></a>
+								<a href="#" class="catalog-leftcol-feature-item-link">Корзина</a>
+							</li>
 						</ul>
 					</div>
 				</div>
 				<div class="catalog-rightcol">
-					<div class="catalog-rightcol-sort">
+					<div class="catalog-rightcol-sort clearfix">
 						<div class="catalog-rightcol-sort-title">Сортировать:</div>
-						<div class="catalog-rightcol-sort-item">По цене</div>
-						<div class="catalog-rightcol-sort-item">По типу</div>
-						<div class="catalog-rightcol-sort-item">По функционалу</div>
+						<div class="catalog-rightcol-sort-price"><a href="#" class="catalog-rightcol-sort-price-link">По цене</a></div>
+						<div class="catalog-rightcol-sort-type"><a href="#" class="catalog-rightcol-sort-type-link">По типу</a></div>
+						<div class="catalog-rightcol-sort-func"><a href="#" class="catalog-rightcol-sort-func-link">По функционалу</a></div>
 					</div>
-					<div class="catalog-rightcol-product">
+					<div class="catalog-rightcol-product clearfix">
 						<div class="catalog-rightcol-product-box">
+							<div class="catalog-rightcol-product-box-wr">
+								<div class="catalog-rightcol-product-box-popup">
+									<div class="catalog-rightcol-product-box-popup-title">AVIATOR</div>
+									<div class="catalog-rightcol-product-box-popup-descript">
+										<div class="catalog-rightcol-product-box-popup-descript-item">Интернет-магазин</div>
+										<div class="catalog-rightcol-product-box-popup-descript-item">с личным кабинетом</div>
+									</div>
+									<div class="catalog-rightcol-product-box-popup-btn">
+										<a href="#" class="catalog-rightcol-product-box-popup-btn-link">10 000 Р.</a>
+									</div>
+								</div>
+							</div>
 							<div class="catalog-rightcol-product-box-top"></div>
-							<div class="catalog-rightcol-product-box-body">
+							<div class="catalog-rightcol-product-box-body catalog-rightcol-product-box-body01">
 								<div class="catalog-rightcol-product-box-body-popup">
 									<div class="catalog-rightcol-product-box-body-popup-title"></div>
 									<div class="catalog-rightcol-product-box-body-popup-description"></div>
@@ -146,8 +218,20 @@
 							</div>
 						</div>
 						<div class="catalog-rightcol-product-box">
+							<div class="catalog-rightcol-product-box-wr">
+								<div class="catalog-rightcol-product-box-popup">
+									<div class="catalog-rightcol-product-box-popup-title">SUNSET</div>
+									<div class="catalog-rightcol-product-box-popup-descript">
+										<div class="catalog-rightcol-product-box-popup-descript-item">Интернет-магазин</div>
+										<div class="catalog-rightcol-product-box-popup-descript-item">с личным кабинетом</div>
+									</div>
+									<div class="catalog-rightcol-product-box-popup-btn">
+										<a href="#" class="catalog-rightcol-product-box-popup-btn-link">10 000 Р.</a>
+									</div>
+								</div>
+							</div>
 							<div class="catalog-rightcol-product-box-top"></div>
-							<div class="catalog-rightcol-product-box-body">
+							<div class="catalog-rightcol-product-box-body catalog-rightcol-product-box-body02">
 								<div class="catalog-rightcol-product-box-body-popup">
 									<div class="catalog-rightcol-product-box-body-popup-title"></div>
 									<div class="catalog-rightcol-product-box-body-popup-description"></div>
@@ -156,8 +240,20 @@
 							</div>
 						</div>
 						<div class="catalog-rightcol-product-box">
+							<div class="catalog-rightcol-product-box-wr">
+								<div class="catalog-rightcol-product-box-popup">
+									<div class="catalog-rightcol-product-box-popup-title">FORTE</div>
+									<div class="catalog-rightcol-product-box-popup-descript">
+										<div class="catalog-rightcol-product-box-popup-descript-item">Интернет-магазин</div>
+										<div class="catalog-rightcol-product-box-popup-descript-item">с личным кабинетом</div>
+									</div>
+									<div class="catalog-rightcol-product-box-popup-btn">
+										<a href="#" class="catalog-rightcol-product-box-popup-btn-link">10 000 Р.</a>
+									</div>
+								</div>
+							</div>
 							<div class="catalog-rightcol-product-box-top"></div>
-							<div class="catalog-rightcol-product-box-body">
+							<div class="catalog-rightcol-product-box-body catalog-rightcol-product-box-body03">
 								<div class="catalog-rightcol-product-box-body-popup">
 									<div class="catalog-rightcol-product-box-body-popup-title"></div>
 									<div class="catalog-rightcol-product-box-body-popup-description"></div>
@@ -166,8 +262,20 @@
 							</div>
 						</div>
 						<div class="catalog-rightcol-product-box">
+							<div class="catalog-rightcol-product-box-wr">
+								<div class="catalog-rightcol-product-box-popup">
+									<div class="catalog-rightcol-product-box-popup-title">MARQUEE</div>
+									<div class="catalog-rightcol-product-box-popup-descript">
+										<div class="catalog-rightcol-product-box-popup-descript-item">Интернет-магазин</div>
+										<div class="catalog-rightcol-product-box-popup-descript-item">с личным кабинетом</div>
+									</div>
+									<div class="catalog-rightcol-product-box-popup-btn">
+										<a href="#" class="catalog-rightcol-product-box-popup-btn-link">10 000 Р.</a>
+									</div>
+								</div>
+							</div>
 							<div class="catalog-rightcol-product-box-top"></div>
-							<div class="catalog-rightcol-product-box-body">
+							<div class="catalog-rightcol-product-box-body catalog-rightcol-product-box-body04">
 								<div class="catalog-rightcol-product-box-body-popup">
 									<div class="catalog-rightcol-product-box-body-popup-title"></div>
 									<div class="catalog-rightcol-product-box-body-popup-description"></div>
@@ -176,8 +284,20 @@
 							</div>
 						</div>
 						<div class="catalog-rightcol-product-box">
+							<div class="catalog-rightcol-product-box-wr">
+								<div class="catalog-rightcol-product-box-popup">
+									<div class="catalog-rightcol-product-box-popup-title">AVENUE</div>
+									<div class="catalog-rightcol-product-box-popup-descript">
+										<div class="catalog-rightcol-product-box-popup-descript-item">Интернет-магазин</div>
+										<div class="catalog-rightcol-product-box-popup-descript-item">с личным кабинетом</div>
+									</div>
+									<div class="catalog-rightcol-product-box-popup-btn">
+										<a href="#" class="catalog-rightcol-product-box-popup-btn-link">10 000 Р.</a>
+									</div>
+								</div>
+							</div>
 							<div class="catalog-rightcol-product-box-top"></div>
-							<div class="catalog-rightcol-product-box-body">
+							<div class="catalog-rightcol-product-box-body catalog-rightcol-product-box-body05">
 								<div class="catalog-rightcol-product-box-body-popup">
 									<div class="catalog-rightcol-product-box-body-popup-title"></div>
 									<div class="catalog-rightcol-product-box-body-popup-description"></div>
@@ -186,8 +306,20 @@
 							</div>
 						</div>
 						<div class="catalog-rightcol-product-box">
+							<div class="catalog-rightcol-product-box-wr">
+								<div class="catalog-rightcol-product-box-popup">
+									<div class="catalog-rightcol-product-box-popup-title">DOVETAIL</div>
+									<div class="catalog-rightcol-product-box-popup-descript">
+										<div class="catalog-rightcol-product-box-popup-descript-item">Интернет-магазин</div>
+										<div class="catalog-rightcol-product-box-popup-descript-item">с личным кабинетом</div>
+									</div>
+									<div class="catalog-rightcol-product-box-popup-btn">
+										<a href="#" class="catalog-rightcol-product-box-popup-btn-link">10 000 Р.</a>
+									</div>
+								</div>
+							</div>
 							<div class="catalog-rightcol-product-box-top"></div>
-							<div class="catalog-rightcol-product-box-body">
+							<div class="catalog-rightcol-product-box-body catalog-rightcol-product-box-body06">
 								<div class="catalog-rightcol-product-box-body-popup">
 									<div class="catalog-rightcol-product-box-body-popup-title"></div>
 									<div class="catalog-rightcol-product-box-body-popup-description"></div>
@@ -196,11 +328,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="catalog-rightcol-pagination">
-						<div class="catalog-rightcol-pagination-btn">1</div>
-						<div class="catalog-rightcol-pagination-btn">2</div>
-						<div class="catalog-rightcol-pagination-btn">3</div>
-						<div class="catalog-rightcol-pagination-btn">Следующая</div>
+					<div class="catalog-rightcol-pagination clearfix">
+						<div class="catalog-rightcol-pagination-btn catalog-rightcol-pagination-btn-active"><a href="#" class="catalog-rightcol-pagination-btn-link">1</a></div>
+						<div class="catalog-rightcol-pagination-btn"><a href="#" class="catalog-rightcol-pagination-btn-link">2</a></div>
+						<div class="catalog-rightcol-pagination-btn"><a href="#" class="catalog-rightcol-pagination-btn-link">3</a></div>
+						<div class="catalog-rightcol-pagination-btn-next"><a href="#" class="catalog-rightcol-pagination-btn-link">Следующая</a></div>
 					</div>
 				</div>
 			</div>
@@ -209,20 +341,23 @@
 <!-- контакты начало -->
 		<div class="contact">
 			<div class="contact-adress">
-				<div class="contact-adress-title">NЁRDS DESIGN STUDIO</div>
-				<div class="contact-adress-item">305000, Краснодар, ул.Головатого, 100</div>
-				<div class="contact-adress-phone">тел.: +7(861)275-75-75</div>
-				<div class="contact-adress-btn">Напишите нам</div>
+				<div class="contact-adress-title">
+					<span class="contact-adress-title-midl">NЁRDS</span>
+					<span class="contact-adress-title-thin">DESIGN STUDIO</span>
+				</div>
+				<div class="contact-adress-item">350000, Краснодар, ул. Головатого, 100</div>
+				<div class="contact-adress-item contact-adress-item-phone">тел. +7 (861) 275-75-75</div>
+				<div class="contact-adress-btn"><a href="#" class="contact-adress-btn-link">Напишите нам</a></div>
 			</div>
 		</div>
 <!-- контакты конец -->
 		<div class="container">
 <!-- футер начало -->
-			<div class="footer">
+			<div class="footer clearfix">
 				<div class="footer-social">
-					<div class="footer-social-vk"></div>
-					<div class="footer-social-fb"></div>
-					<div class="footer-social-inst"></div>
+					<div class="footer-soc-item footer-soc-vk"><a href="#" class="footer-soc-item-link footer-soc-vk-link"></a></div>
+					<div class="footer-soc-item footer-soc-fb"><a href="#" class="footer-soc-item-link footer-soc-fb-link"></a></div>
+					<div class="footer-soc-item footer-soc-inst"><a href="#" class="footer-soc-item-link footer-soc-inst-link"></a></div>
 				</div>
 				<div class="footer-discount">
 					<div class="footer-discount-title">Давайте дружить, это выгодно!</div>
@@ -232,5 +367,6 @@
 <!-- футер конец -->
 		</div>
 	</div>
+<script type="text/javascript" src="js/jcarousel.js"></script>
 </body>			
 </html>

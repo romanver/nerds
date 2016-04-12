@@ -1,0 +1,42 @@
+.jcarousel{
+	position: relative;
+	overflow: hidden;
+}
+.jcarousel-list{
+	width: 20000em;
+	height: 306px;
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.jcarousel-item{
+	float: left;
+	width: 880px;
+	height: 306px;
+}
+.slider-box, .slider-box1, .slider-box2{
+	width: 100%;
+	height: 306px;
+}
+.jcarousel-pagination{
+	position: absolute;
+	width: 50px;
+	left: 50%;
+	margin-left: -34px;
+	top: 204px;
+}
+.jcarousel-pagination-link{
+	background-image: url(../img/slider-notchecked.png);
+	float: left;
+	margin-right: 10px;
+	display: block;
+	width: 10px;
+	height: 10px;
+}
+.active{
+	background-image: url(../img/slider-checked.png);
+}
+.jcarousel-pagination-link:last-child{
+	margin-right: 0;
+}

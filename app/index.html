@@ -14,7 +14,26 @@
 	<script type="text/javascript" src="js/jcarousel/jquery.jcarousel-autoscroll.min.js"></script>
 </head>
 <body>
-	<div class="wrapper wrapper-gray">
+	<div class="wrapper wr-popup">
+		<div class="container">
+			<div class="header header-popup clearfix">
+				<div class="header-name">
+					<a href="index.html" class="header-name-link-midl">NЁRDS</a>
+					<a href="index.html" class="header-name-link-thin">DESIGN STUDIO</a>
+				</div>
+				<div class="header-basket basket-popup">
+					<a href="" class="header-basket-link">Корзина</a>
+				</div>
+				<ul class="header-menu menu-popup">
+					<li class="header-menu-item"><a href="#" class="header-menu-item-link">Студия</a></li>
+					<li class="header-menu-item"><a href="#" class="header-menu-item-link">Клиенты</a></li>
+					<li class="header-menu-item"><a href="#" class="header-menu-item-link">Магазин</a></li>
+					<li class="header-menu-item"><a href="#" class="header-menu-item-link">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
 		<div class="container">
 <!-- хэдер начало -->
 			<div class="header clearfix">
@@ -27,9 +46,8 @@
 					<li class="header-menu-item"><a href="#" class="header-menu-item-link">Контакты</a></li>
 				</ul>
 			</div>
-		</div>
 <!-- хэдер конец -->
-		<div class="container">
+		
 <!-- слайдер начало-->
 			<div class="slider">
 				<div class="jcarousel">
@@ -67,16 +85,10 @@
 					</ul>
 				</div>
 				<div class="jcarousel-pagination"></div>
-						<!--div class="slider-box-indicator">
-							<div class="slider-box-indicator-checked"><a href="#" class="slider-box-indicator-checked-link"></a></div>
-							<div class="slider-box-indicator-notchecked"><a href="#" class="slider-box-indicator-notchecked-link"></a></div>
-							<div class="slider-box-indicator-notchecked"><a href="#" class="slider-box-indicator-notchecked-link"></a></div>
-						</div-->
 			</div>
 <!-- слайдер конец -->
 		</div>
 	</div>
-	<div class="wrapper wrapper-white">
 		<div class="container">
 <!-- заказы начало -->
 			<div class="order clearfix">
@@ -338,6 +350,7 @@
 			</div>
 <!-- каталог конец -->
 		</div>
+	<div class="wrapper">
 <!-- контакты начало -->
 		<div class="contact">
 			<div class="contact-adress">
@@ -349,8 +362,31 @@
 				<div class="contact-adress-item contact-adress-item-phone">тел. +7 (861) 275-75-75</div>
 				<div class="contact-adress-btn"><a href="#" class="contact-adress-btn-link">Напишите нам</a></div>
 			</div>
+			<div class="cont-popup">
+				<div class="cont-popup-box">
+					<form action="#" class="form">
+						<div class="form-title clearfix">
+							<div class="form-title-item">Ваше имя:</div>
+							<div class="form-title-item">Ваш e-mail:</div>
+						</div>
+						<div class="form-input clearfix">
+							<input type="text" placeholder="Представьтесь, пожалуйста" class="form-input-item">
+							<input type="email" placeholder="Для отправки ответа" class="form-input-item">
+						</div>
+						<div class="form-textarea">
+							<div class="form-textarea-item">Текст письма:</div>
+							<textarea placeholder="В свободной форме" class="form-textarea-field"></textarea>
+						</div>
+						<div class="form-btn clearfix">
+							<input type="submit" value="Отправить" class="form-btn-sub">
+							<input type="reset" value="Отмена" class="form-btn-res">
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
 <!-- контакты конец -->
+	</div>
 		<div class="container">
 <!-- футер начало -->
 			<div class="footer clearfix">
@@ -366,7 +402,7 @@
 			</div>
 <!-- футер конец -->
 		</div>
-	</div>
 <script type="text/javascript" src="js/jcarousel.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>			
 </html>

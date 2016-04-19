@@ -1,35 +1,36 @@
-$(function() {
-	$('.jcarousel').jcarousel({
-		wrap: 'circular',
-		animation: 'slow'
+$(document).ready(function(){
+
+// появление верхнего меню при скроле вниз начало
+    var $menu = $(".wr-popup");
+
+    $(window).scroll(function(){
+        if ( $(this).scrollTop() > 80 ){
+
+            $menu.css({"display" : "block"});
+
+        } else if($(this).scrollTop() <= 80 ) {
+
+            $menu.css({"display" : "none"});
+        }
+    });
+// появление верхнего меню при скроле вниз конец
+
+// всплывающее окно с формой начало
+	// появление окна
+    $('.contact-adress-btn-link').click( function(event){  // лoвим клик пo ссылкe
+
+		event.preventDefault(); // выключaем стaндaртную рoль элементa
+
+		$('.cont-popup').css({'display' : 'block'})
+						.animate({'opacity' : '1'}, 200); // плавное появление окна с формой
 	});
-	
-	// pagination
+    // закрытие окна
+    $('.form-btn-res').click( function(){  // лoвим клик пo кнопке
 
-	$('.jcarousel-pagination')
-
-	// триггер класса active
-
-	.on('jcarouselpagination:active', '.jcarousel-pagination-link', function(){
-		$(this).addClass('active');
-	})
-	.on('jcarouselpagination:inactive', '.jcarousel-pagination-link', function(){
-		$(this).removeClass('active');
-	})
-
-	// pagination инициализация
-
-	.jcarouselPagination({
-		item: function(page) {
-			return '<a class="jcarousel-pagination-link" href="#' + page +'"></a>';
-		}
+		$('.cont-popup').animate({'opacity' : '0'}, 200,  // плавное затухание окна с формой
+			function(){
+					$(this).css({'display' : 'none'});
+		});
 	});
-
-
-	// autoscroll
-	$('.jcarousel').jcarouselAutoscroll({
-		interval: 5000,
-		target: '+=1',
-		autostart: true
-	});
-});
+// всплывающее окно с формой конец
+ });

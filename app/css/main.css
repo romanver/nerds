@@ -16,12 +16,7 @@ body{
 .wrapper{
 	width: 1280px;
 	margin: 0 auto;
-}
-.wrapper-gray{
 	background-color: #eee;
-}
-.wrapper-white{
-	background-color: white;
 }
 .container{
 	width: 880px;
@@ -69,6 +64,9 @@ body{
 	height: 19px;
 	float: left;
 }
+.header-menu-item:hover{
+	box-shadow:0px 3px 0px #FB565A;
+}
 .header-menu-item:last-child{
 	margin-right: 0;
 }
@@ -79,6 +77,45 @@ body{
 	text-decoration: none;
 }
 /* хэдер конец */
+
+/* фиксированное меню при прокрутке начало */
+.wr-popup{
+	display: none;
+	background-color: white;
+	position: fixed;
+	left: 50%;
+	margin-left: -640px;
+	z-index: 1;
+}
+.header-popup{
+	margin-bottom: 0;
+	height: 73px;
+}
+.header-name{
+	position: relative;
+	top: 28px;
+	left: 1px;
+	margin-right: 166px;
+	float: left;
+}
+.header-name-link-midl{
+	margin-right: -2px;
+	font-weight: bold;
+}
+.header-name-link-thin{
+	font-family: "roboto-thin";
+	font-weight: bold;
+	letter-spacing: 0.02em;
+}
+
+.header-name-link-midl, .header-name-link-thin{
+	text-decoration: none;
+	color: black;
+}
+.basket-popup, .menu-popup{
+	padding-top: 27px;
+}
+/* фиксированное меню при прокрутке конец */
 
 /* слайдер начало */
 .slider{
@@ -198,7 +235,7 @@ body{
 	font-family: "roboto-light";
 	font-size: 1.143em;
 	letter-spacing: 0.002em;
-	line-height: 1.375;
+	line-height: 1.45;
 	margin-bottom: 26px;
 }
 .order-box-description-app{
@@ -242,7 +279,7 @@ body{
 
 }
 .about-body{
-	margin-bottom: 49px;
+	margin-bottom: 50px;
 }
 .about-left{
 	float: left;
@@ -291,10 +328,10 @@ body{
 	width: 240px;
 	height: 318px;
 	position: relative;
-	top: 13px;
+	top: 14px;
 }
 .about-clients{
-	height: 166px;
+	height: 168px;
 	border-top: 2px solid #eee;
 	border-bottom: 2px solid #eee;
 	margin-bottom: 74px;
@@ -318,6 +355,14 @@ body{
 	margin-top: -16px;
 	left: 50%;
 	margin-left: -99px;
+}
+.about-clients-item-link-glu, .about-clients-item-link-html, 
+.about-clients-item-link-barb{
+	opacity: 0.7;
+}
+.about-clients-item-link-glu:hover, .about-clients-item-link-html:hover, 
+.about-clients-item-link-barb:hover{
+	opacity: 1;
 }
 .about-clients-item-link-html{
 	display: block;
@@ -525,6 +570,7 @@ body{
 	background-color: white;
 	padding-top: 40px;
 	text-align: center;
+	cursor: pointer;
 }
 .catalog-rightcol-product-box-popup:hover{
 	
@@ -645,6 +691,7 @@ body{
 	height: 416px;
 	background: url(../img/contact-map-img.png) no-repeat;
 	margin-bottom: 77px;
+	position: relative;
 }
 .contact-adress{
 	width: 219px;
@@ -689,7 +736,6 @@ body{
 	text-transform: uppercase;
 	letter-spacing: 0.04em;
 	line-height: 38px;
-
 }
 .contact-adress-btn-link{
 	display: block;
@@ -702,6 +748,94 @@ body{
 	background-color: #d6494d;
 }
 /* контакты конец */
+
+/* всплывающее окно - напишите нам начало */
+.cont-popup{
+	display: none;
+	position: absolute;
+	width: 622px;
+	height: 417px;
+	left: 316px;
+	top: 17px;
+	background-color: white;
+	box-shadow: 0px 20px 80px 3px #000000;
+	opacity: 0;
+}
+.cont-popup-box{
+	width: 462px;
+	margin: 53px auto 49px;
+}
+.form-title{
+	margin-bottom: 7px;
+}
+.form-title-item, .form-textarea-item{
+	font-size: 1.143em;
+	letter-spacing: 0.001em;
+	float: left;
+	margin-right: 161px;
+}
+.form-title-item:last-child, .form-input-item:last-child{
+	margin-right: 0;
+}
+.form-input{
+	margin-bottom: 18px;
+}
+.form-input-item{
+	float: left;
+	margin-right: 19px;
+	width: 203px;
+	height: 33px;
+	outline: none;
+}
+.form-input-item, .form-textarea-field{
+	font-size: 0.857em;
+	border: 3px solid #eee;
+	border-radius: 3px;
+	padding-left: 13px;
+	text-transform: uppercase;
+}
+.form-textarea{
+	margin-bottom: 45px;
+}
+.form-textarea-item{
+	float: none;
+	margin-bottom: 8px;
+}
+.form-textarea-field{
+	width: 441px;
+	height: 100px;
+	padding-top: 8px;
+	resize: none;
+	maxlength: 200;
+	outline: none;
+
+}
+.form-btn{
+	
+}
+.form-btn-sub, .form-btn-res{
+	margin-right: 16px;
+	padding: 0;
+	width: 220px;
+	height: 38px;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	font-family: "roboto-medium";
+	font-size: 0.84em;
+	background-color: #fb565a;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	line-height: 38px;
+}
+.form-btn-res{
+	margin-right: 0;
+	background-color: #f1f1f1;
+	color: black;
+}
+/* всплывающее окно - напишите нам конец */
+
 /* футер начало */
 .footer{
 	margin-bottom: 70px;
